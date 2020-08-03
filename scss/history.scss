@@ -1,0 +1,118 @@
+$p-green:#bec894;
+$p-black:#2e2e28;
+$p-white:#e7e5da;
+$p-orange:orange;
+
+.portfolio {
+    .section2 {
+        .myhistory {
+            width: 100%;
+            max-width: 1185px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 40px;
+            padding-right: 40px;
+
+            .upcontent {
+                margin-bottom: 60px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .leftct {
+                    max-width: 40%;
+                    color: $p-black;
+
+                    .L-title {
+                        font-size: 42px;
+
+                    }
+
+                    .L-text {
+                        font-size: 18px;
+
+                    }
+
+                }
+
+                .rightct {
+                    flex: 1;
+                    position: relative;
+                    max-width: 50%;
+
+                    
+
+                    .rimg {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 80%;
+                        object-fit: cover;
+                        object-position: center center;
+                        opacity: 1;
+                        transition: opacity 500ms ease 0s;
+                        border-radius: 50px;
+                    }
+                   
+                }
+                .rightct:before {
+                    content: '';
+                    display: block;
+                    padding-top: 60%;                
+                }
+            }
+
+            .downcontent {
+                .timeline {
+                    display: flex;
+                    list-style: none;
+
+                    .history {
+                        position: relative;
+                        width: 15%;
+                        border-top: 2px solid;
+                        margin-left: 20px;
+                        padding-top: 15px;
+
+                        .h-subtitle {
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            color: #686677;
+                            font-weight: 500;
+                            margin-bottom: 7px;
+
+                        }
+
+                        .h-title {
+                            letter-spacing: 0;
+                            font-weight: 600;
+                            font-size: 24px;
+                            margin-bottom: 7px;
+                            color:$p-green;
+
+                        }
+
+                        .h-content {
+                            display: none;
+                            letter-spacing: -0.01em;
+
+                            color: $p-black;
+                            line-height: 1.6;
+                            letter-spacing: 1.8px;
+                            font-size: 16px;
+                            position: absolute;
+                        }
+
+                    }
+
+                    .active {
+                        width: 35%;
+                        border-top: 3px solid #bec894;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
